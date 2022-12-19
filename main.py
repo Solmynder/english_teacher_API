@@ -5,9 +5,6 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from helper import Helper
 from models import AnswerRequestBody, LetterRequestBody
 
-# Endpoints:
-# word/guess,   word/check,    word/result
-# letter/guess,   letter/check,    letter/result
 
 app = FastAPI()  # create API service
 helper = Helper()  # database, questions

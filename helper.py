@@ -2,6 +2,7 @@ import random
 import numpy as np
 from fastapi.responses import JSONResponse
 
+
 class Helper:
     def __init__(self):
         self.question_id = 1000
@@ -34,7 +35,7 @@ class Helper:
 
     def generate_question_letter(self):
         en_word = random.choice(list(self.dictionary.keys()))
-        index = random.randint(0, len(en_word))
+        index = random.randint(0, len(en_word) - 1)
         correct_answer = en_word[index]
 
         question_id = self.get_question_id()
